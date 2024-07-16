@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--MapLibre-->
+    <script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
+    <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
+    <!-- Mapbox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Maps in MapLibre and Mapbox</title>
+    <style>
+      #maps {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+      }
+      #maplibre, #mapbox {
+        width: 45%;
+        height: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="maps">
+      <div id="maplibre"></div>
+      <div id="mapbox"></div>
+    </div>
+    <script type="module" src="/src/maplibre.ts"></script>
+    <script type="module" src="/src/mapbox.ts"></script>
+  </body>
+</html>
